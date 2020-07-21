@@ -1,0 +1,10 @@
+NODE_ENV = 'production'
+PORT = 9091
+DB_URI = ///////////////
+JwtSecret = /////
+CorsCredentials = true
+CorsOrigin = true
+AWS_ACCESS_KEY = ////
+AWS_SECRET_ACCESS_KEY = /////
+AWS_BUCKET = bucket-name
+

@@ -1,0 +1,41 @@
+{
+	"name": "buildnewgovt",
+	"version": "1.0.0",
+	"description": "buildnewgovt-api",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [
+		"ES6"
+	],
+	"author": "Asad Shah <asadsha6131@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^5.3.0",
+		"eslint-config-airbnb-base": "^13.2.0",
+		"eslint-config-prettier": "^6.0.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-prettier": "^3.1.0",
+		"nodemon": "^1.19.1",
+		"prettier": "^1.18.2"
+	},
+	"dependencies": {
+		"aws-sdk": "^2.607.0",
+		"bcryptjs": "^2.4.3",
+		"chalk": "^2.4.2",
+		"compression": "^1.7.4",
+		"cors": "^2.8.5",
+		"dotenv": "^8.0.0",
+		"esm": "^3.2.25",
+		"express": "^4.17.1",
+		"helmet": "^3.21.2",
+		"http-status": "^1.3.2",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.6.7",
+		"morgan": "^1.9.1",
+		"multer": "^1.4.2",
+		"passport": "^0.4.1"
+	}
+}

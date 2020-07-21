@@ -1,0 +1,53 @@
+POST http://localhost:5000/signup/
+Content-Type: application/json
+
+ {
+    "firstname":"Andrew",
+    "lastname":"Lane",
+    "password":"password",
+    "email":"omer@dmt1234.io",
+    "mobile":"0900-78601",
+    "username":"Andrew"
+}
+
+
+### Signin user
+POST http://localhost:3000/Signin/
+Content-Type: application/json
+
+ {
+    "email":"omer@dmt1.io",
+    "password":"password"
+}
+
+
+### Signin Admin
+POST http://localhost:5000/Signin/admin/
+Content-Type: application/json
+
+ {
+    "email":"admin@gmail.com",
+    "password":"admin"
+}
+
+
+
+
+
+### Add Event
+POST http://localhost:5000/event/add/
+Content-Type: application/json
+
+ {
+    "name":"Event 1",
+    "date":"29-Jul-19",
+    "description":"New Event"
+}
+
+
+### Get Events
+DELETE http://localhost:5000/event/delete/5d3f188e491d0c0a54727097
+
+
+
+### Edit Request

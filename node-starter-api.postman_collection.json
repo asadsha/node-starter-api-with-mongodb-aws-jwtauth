@@ -1,0 +1,261 @@
+{
+	"id": "9397a899-550a-4dd8-a62b-bb20f08983e0",
+	"name": "node-starter-api",
+	"description": null,
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b378d9a8-c501-45c8-acbb-cc1e9addf229",
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c6202f5a-2634-4332-b89d-d81811bebb40",
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		}
+	],
+	"variables": [],
+	"order": [
+		"2be698d4-bba2-419d-916d-a8f73f5de0a7",
+		"103e963f-0a29-481f-b26f-ae668c6d1e66",
+		"5d37e589-a23b-44c3-ae3d-9bbfca41b744",
+		"a095fe95-7351-4115-894f-b7fe6b8f569a",
+		"5679e37b-33c2-4fd3-b8a3-930d93b5d691",
+		"4288652d-260a-43a4-9e6f-f71c613e7c0d",
+		"f7160ee2-fc67-4a92-a150-a96e1bf640dc",
+		"a3266f37-d30e-4abf-ab53-59dce07c29fc"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "103e963f-0a29-481f-b26f-ae668c6d1e66",
+			"name": "Signup User",
+			"url": "http://localhost:9091/signup",
+			"description": null,
+			"data": [
+				{
+					"key": "name",
+					"value": "Rose",
+					"type": "text"
+				},
+				{
+					"key": "imageUrl",
+					"type": "file",
+					"enabled": true,
+					"value": ""
+				},
+				{
+					"key": "gender",
+					"type": "file",
+					"enabled": false,
+					"value": ""
+				},
+				{
+					"key": "userName",
+					"value": "harley123",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "email",
+					"value": "rose@gmail.com",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "roseee",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "2be698d4-bba2-419d-916d-a8f73f5de0a7",
+			"name": "Admin Sign in",
+			"url": "http://localhost:9091/signin/admin",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"email\" : \"admin@gmail.com\",\n\t\"password\" : \"qwerty000\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4288652d-260a-43a4-9e6f-f71c613e7c0d",
+			"name": "update event",
+			"url": "http://localhost:9091/event/edit/5eb579cbca65f9099c2b9486",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PATCH",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"description\": \"jkg89uguogilkkkkkkkkkkkkkk\",\n  \"name\": \"78tuiii\",\n        \"date\": \"23 mar, 1966\"\n}",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5679e37b-33c2-4fd3-b8a3-930d93b5d691",
+			"name": "get Single Event By Id",
+			"url": "http://localhost:9091/event/5eb579cbca65f9099c2b9486",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5d37e589-a23b-44c3-ae3d-9bbfca41b744",
+			"name": "Signin user",
+			"url": "http://localhost:9091/signin",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"email\" : \"rose@gmail.com\",\n\t\"password\" : \"roseee\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a095fe95-7351-4115-894f-b7fe6b8f569a",
+			"name": "get All Events",
+			"url": "http://localhost:9091/event/",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWI5NTdhZWRlZjAwNjFhODg3ZjJkYTciLCJlbWFpbCI6InJvc2VAZ21haWwuY29tIiwibmFtZSI6IlJvc2UiLCJpbWFnZVVybCI6Imh0dHBzOi8va25vd3RoeXNlbGYuczMuYW1hem9uYXdzLmNvbS9kZWZhdWx0LWF2YXRhci5wbmciLCJpYXQiOjE1ODkyMDQ5NTksImV4cCI6MTYyMDc0MDk1OX0.X--x-sxjD-xB9X9zbBJrmdJ8VmaiYlGM60VmCILMvUQ\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a3266f37-d30e-4abf-ab53-59dce07c29fc",
+			"name": "Delete Event By Admin",
+			"url": "http://localhost:9091/event/delete/5eb95950def0061a887f2da8",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE1ODkyMDUzODgsImV4cCI6MTYyMDc0MTM4OH0.ZPxlOYSkynQJE9UpV1DWt_t9_DQuNM7gjdI075MAj6g",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE1ODkyMDUzODgsImV4cCI6MTYyMDc0MTM4OH0.ZPxlOYSkynQJE9UpV1DWt_t9_DQuNM7gjdI075MAj6g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f7160ee2-fc67-4a92-a150-a96e1bf640dc",
+			"name": "Add Event",
+			"url": "http://localhost:9091/post/get/5e7f7bf0f0200e1fa8755142/5e7f66d7df41d41d94398d3e",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
